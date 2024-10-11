@@ -1,5 +1,5 @@
 import unittest
-from Test1_erreur import FizzBuzz  # Import de la classe FizzBuzz à tester
+from Test2 import FizzBuzz  # Import de la classe FizzBuzz à tester
 
 class TestFizzBuzz(unittest.TestCase):
     def setUp(self) -> None:

@@ -1,22 +1,6 @@
-# import unittest
-# from fizzbuzz import affiche  # On supposera que la méthode existe dans fizzbuzz.py (elle n'existe pas)
-
-# class TestFizzBuzz(unittest.TestCase):
-#     def test_affiche(self):
-#         # Vérification de l'existence de la méthode et du bon affichage
-#         expected_output = (
-#             "12Fizz4BuzzFizz78FizzBuzz11Fizz1314FrisBee1617Fizz1819BuzzFizz"
-#         )
-#         self.assertEqual(affiche(), expected_output)
-
-# if __name__ == '__main__':
-#     unittest.main()
-
-
-
-def affiche():
+def affiche(n):
     result = ""
-    for i in range(1, 101):
+    for i in range(1, n + 1):
         if i % 15 == 0:
             result += "FrisBee"
         elif i % 3 == 0:
@@ -26,4 +10,4 @@ def affiche():
         else:
             result += str(i)
     print(result)
-affiche()
+affiche(15)

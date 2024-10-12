@@ -2,7 +2,7 @@ class FizzBuzz:
     def __init__(self, name):
         self.name = name
 
-    def affiche(self):
+    def affiche():
         result = ""
         for i in range(1, 101):
             if i % 15 == 0:
@@ -12,9 +12,9 @@ class FizzBuzz:
             elif i % 5 == 0:
                 result += "Buzz"
             else:
-                result += str(i) + ""
+                result += str(i)
         print(result)
-    affiche(15)
+    affiche()
     def factorielle(self, n):
         if n == 0 or n == 1:
             return 1
